@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TrailBox – Coming Soon</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 15vh;
+      background: url('https://svgshare.com/i/uWg.svg') repeat-x;
+      background-size: contain;
+      animation: wave 10s linear infinite;
+      opacity: 0.5;
+    }
+
+    @keyframes wave {
+      0% {
+        background-position-x: 0;
+      }
+      100% {
+        background-position-x: 1000px;
+      }
+    }
+
+    .loader {
+      border: 5px solid rgba(255,255,255,0.3);
+      border-top: 5px solid white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1.5s linear infinite;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .tagline {
+      font-style: italic;
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <h1>TrailBox is Coming Soon 🚀</h1>
+  <p>We’re setting up something awesome for you. Stay tuned!</p>
+  <div class="tagline">Personal Cloud. Private. Powerful.</div>
+  <div class="wave"></div>
+</body>
+</html>
